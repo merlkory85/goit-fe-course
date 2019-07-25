@@ -13,4 +13,5 @@ https://github.com/merlkory85/goit-fe-course/tree/master/module03/homework
 https://github.com/merlkory85/goit-fe-course/tree/master/module04
 
 Ссылка на робочую страницу модуля4
+https://merlkory85.github.io/goit-fe-course/module04/index.html
 
