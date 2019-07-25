@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+h2 {
+    color: rgb(81, 81, 81);
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+h4 {
+    color: rgb(85, 82, 82);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.36px;
+}
+
+/* HEADER */
+header {
+    padding: 43px 0 0 0;
+}
+
+.nav-logo {
+    display: inline-block;
+    color: rgb(85, 82, 82);
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-logo p::first-letter {
+    color: rgb(26, 188, 156);
+    font-weight: 900;
+}
+
+.nav__list {
+    float: right;
+}
+
+.nav__list-item {
+    float: left;
+    list-style-type: none;
+    margin: 5px 30px 0 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.nav__list-item:last-child {
+    margin-right: 0;
+}
+
+.nav__list-link {
+    text-decoration: none;
+    color: rgb(15, 1, 1);
+}
+
+.nav__list-link:hover,
+.nav__list-link:focus {
+    color: rgb(26, 188, 156);
+}
+
+/* SECTION FEATURED */
+.featured {
+    padding: 95px 0;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.featured-title {
+    margin-bottom: 128px;
+}
+
+.featured-title:after {
+    content: '';
+    margin: 0 auto;
+    display: block;
+    width: 164px;
+    height: 7px;
+    margin-top: 30px;
+    background-color: rgb(26, 188, 156);
+}
+
+
+.list__block {
+    float: left;
+    margin: 0 30px 30px 0;
+    width: 255px;
+    height: 322px;
+    background-color: rgb(233, 240, 253);
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.list__block:nth-child(4n){
+    margin-right: 0;
+}
+
+.list__block:nth-child(n+5){
+    margin-bottom: 0;
+}
+
+
+.list__block-img {
+    display: block;
+}
+
+.product1 {
+    margin: 60px 40px;
+}
+
+.product2 {
+    margin: 18px 39px;
+}
+
+.product3 {
+    margin: 62px 13px;
+}
+
+.product4 {
+    margin: 39px 0 39px 9px;
+}
+
+.product5 {
+    margin: 34px 0 34px 28px;
+}
+
+.product6 {
+    margin: 62px 0 63px 17px;
+}
+
+.product7 {
+    margin: 21px 30px;
+}
+
+.product8 {
+    margin: 92px 11px;
+}
+
+.list__block-info {
+    width: 255px;
+    height: 40px;
+    background-color: rgb(50, 50, 50);
+}
+
+.list__block:hover .list__block-info { 
+    background-color: rgb(25, 188, 155);} 
+
+
+.list__block-title {
+    float: left;
+    margin-left: 14px;
+}
+
+.list__block-price {
+    width: 54px;
+    height: 40px;
+    float: right;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.44);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* SECTION NEWS */
+.news {
+   padding: 10px 0 80px; 
+}
+
+.news-title {
+    color: rgb(85, 82, 82);
+    margin: 0 0 100px 0;
+}
+
+.news-title:after {
+    content: '';
+    margin: 0 auto;
+    display: block;
+    width: 164px;
+    height: 7px;
+    margin-top: 30px;
+    background-color: rgb(78, 198, 171);
+}
+
+.list-feature__item {
+    float: left;
+    width: 350px;
+    margin: 0 30px 0 0;
+    list-style-type: none;
+}
+
+.list-feature__item:last-child {
+    margin-right: 0;
+}
+
+.list-feature__title {
+    margin: 0 0 38px 0;
+}
+
+.list-feature__title:after {
+    content: '';
+    display: block;
+    width: 136px;
+    height: 3px;
+    margin-top: 8px;
+    background-color: rgb(78, 198, 171);
+}
+
+.list-feature__text {
+    color: rgb(85, 82, 82);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: -0.28px;
+    margin: 0 0 12px 0;
+}
+
+.btn {
+    width: 160px;
+    height: 51px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(78, 198, 171);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: -0.32px;
+} 
+
+.btn:hover {
+    background-color: rgb(255, 255, 255);
+    color:rgb(78, 198, 171);
+    font-weight: 900;
+    border: 2px solid rgb(78, 198, 171);    
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+   
+
+
+
+
+
+    
