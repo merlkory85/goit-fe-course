@@ -7,7 +7,7 @@ https://merlkory85.github.io/goit-fe-course/module01-02/homework/index.html
 https://merlkory85.github.io/goit-fe-course/module03/homework/index.html
 
 Ссылка на репозиторий модуля3
-https://github.com/merlkory85/goit-fe-course/blob/master/module03/homework/index.html
+https://github.com/merlkory85/goit-fe-course/tree/master/module03/homework
 
 Ссылка на репозиторий модуля4
 https://github.com/merlkory85/goit-fe-course/tree/master/module04
