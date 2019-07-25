@@ -62,7 +62,7 @@ header {
 }
 
 .nav-logo::first-letter {
-    /* color: rgb(26, 188, 156); */
+    color: rgb(26, 188, 156); 
     font-weight: 900;
 }
 
