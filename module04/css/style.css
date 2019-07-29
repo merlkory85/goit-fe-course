@@ -26,7 +26,7 @@ h2 {
     color: rgb(81, 81, 81);
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
-    font-weight: 400;
+    font-weight: 900;
     line-height: 48px;
     text-transform: uppercase;
     text-align: center;
@@ -206,6 +206,7 @@ header {
 .list-feature__title {
     color: #555252;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     line-height: 26px;
     letter-spacing: -0.36px;
     margin: 0 0 38px 0;
