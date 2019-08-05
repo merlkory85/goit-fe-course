@@ -151,7 +151,7 @@ header {
 .service-item__text {
     width: 95%;
     color: #999999;
-    font-family: 'Roboto', 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
