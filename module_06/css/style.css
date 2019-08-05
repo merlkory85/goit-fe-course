@@ -129,7 +129,7 @@ header {
     margin-bottom: 94px;
 }
 
-.service-item:nth-child(n+4) {
+.service-item:nth-last-child(-n+3) {
     margin-bottom: 0;
 }
 
