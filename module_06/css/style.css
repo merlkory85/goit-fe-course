@@ -31,9 +31,12 @@ h2 {
     text-transform: uppercase;
 }
 
-/* h3 {  */
-    
-/* } */
+h3 { 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
 
 /* HEADER */
 header {
@@ -101,12 +104,55 @@ header {
     padding: 100px 0;
 }
 
-.title {
+.service-title {
     text-align: center;
+    margin-bottom: 106px;
 }
 
 .main-subtitle {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     margin-bottom: 16px;
+}
+
+.services-list {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    list-style-type: none;
+    margin-bottom: 94px;
+}
+
+.service-item:nth-child(n+4) {
+    margin-bottom: 0;
+}
+
+.service-item__img {
+    width: 32px;
+    height: 32px;
+    margin: 3px 0;
+    color: rgb(149, 225, 211);
+}
+
+.service-item__box {
+    width: 85%;
+}
+
+.service-item__title {
+    margin-bottom: 12px;
+}
+
+.service-item__text {
+    width: 95%;
+    color: #999999;
+    font-family: 'Roboto', 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
 }
