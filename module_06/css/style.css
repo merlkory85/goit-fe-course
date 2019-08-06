@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: rgb(51, 51, 51);
     font-family: 'Montserrat', sans-serif;
 }
@@ -38,6 +38,11 @@ h3 {
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 400;
 }
 
 article, p {
@@ -67,11 +72,12 @@ header {
 .navigation-list {
     display: flex;
     justify-content: space-between;
-    width: 34vw;
+    flex-wrap: wrap;
+    min-height: 40px;
+    width: 32vw;
 }
 
 .navigation-list__item {
-    padding: 0 25px;
     list-style-type: none;
     font-size: 14px;
     font-weight: 400;
@@ -87,7 +93,7 @@ header {
 
 .navigation-list__link:hover,
 .navigation-list__link:focus {
-    color: rgb(255, 96, 0); 
+  color: rgb(255, 96, 0);  
 }
 
 .navigation-list__link:after {
@@ -96,8 +102,9 @@ header {
     content: "";
     height: 3px;
     width: 0%;
-    transition: width .3s ease-in-out;
+    transition: width .2s linear;
 }
+
 .navigation-list__link:hover:after,
 .navigation-list__link:focus:after {
     width: 100%;
@@ -107,12 +114,29 @@ header {
 
 /* SECTION SERVICES */
 .services {
-    padding: 100px 0;
+    padding: 40px 0;
 }
 
 .service-title {
     text-align: center;
-    margin-bottom: 106px;
+    margin-bottom: 108px;
+}
+
+.service-title:after {
+    display: block;
+    background-color: rgb(243, 129, 129);
+    content: "";
+    margin-top: 35px;
+    height: 3px;
+    width: 5%;
+    left:50%;
+    position:absolute;
+    transition: width .2s linear;
+    transform:translateX(-50%);
+}
+.service-title:hover:after,
+.service-title:focus:after {
+    width: 21%;
 }
 
 .main-subtitle {
@@ -164,12 +188,28 @@ header {
 
 /* SECTION TEAM */
 .team {
-    /* padding: 54px 0; */
+    padding: 78px 0;
 }
-
 .team-title {
     text-align: center;
     margin-bottom: 86px;
+}
+
+.team-title:after {
+    display: block;
+    background-color: rgb(243, 129, 129);
+    content: "";
+    margin-top: 35px;
+    height: 3.5px;
+    width: 5%;
+    left:50%;
+    position:absolute;
+    transition: width .2s linear;
+    transform:translateX(-50%);
+}
+.team-title:hover:after,
+.team-title:focus:after {
+    width: 18%;
 }
 
 .main-subtitle {
@@ -191,4 +231,152 @@ header {
 
 .description-text {
     margin-bottom: 86px;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-list__item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.team-list__item:hover {
+    transition: background-image 1s linear .5s,
+    box-shadow 1s linear .5s, color 1s linear .5s;
+}
+
+.team-list__item:hover .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: 10;
+    transition: background-image .2s linear,
+    box-shadow .2s linear;
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    box-shadow: 10px 11px 0px 0px rgba(149,225,211,1);
+    cursor: pointer;
+}
+
+.team-list__item:hover .overlay-list {
+    display: flex;
+ }
+
+.team-list__img {
+    margin-bottom: 26px;
+}  
+
+.team-list__title {
+    margin-bottom: 6px;
+}
+
+.team-list__specialty {
+    color: rgb(153, 153, 153);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+ .overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 86.7%;
+ } 
+
+ .overlay-list {
+    display: none;
+    width: 224px;
+    height: 56px;
+    background-color: rgb(252, 227, 138);
+ }
+
+.overlay-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    height: 56px;
+    width: 56px;
+    outline: 1px solid rgb(243, 129, 129);
+    opacity: 0.5;
+}
+
+.overlay-item:hover {
+    background-color: rgb(149, 225, 211);
+}
+
+.overlay-link {
+    color: rgb(243, 129, 129);
+}
+
+
+
+
+/* FOOTER */
+.footer {
+    outline: 1px solid rgb(229, 229, 229);
+    padding: 22px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-wrap {
+    display: flex;
+}
+
+.footer-title {
+    margin-right: 3px;
+}
+
+.footer-link {
+    color: rgb(243, 129, 129);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.footer-form input {
+    color: rgb(204, 204, 204);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 24px;
+    padding: 8px 54px 8px 10px;
+    outline: none;
+    border: none;
+    outline: 1px solid rgb(231, 231, 231);
+}
+
+.btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(149, 225, 211);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
