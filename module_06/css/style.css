@@ -243,6 +243,7 @@ header {
     position: relative;
     flex-direction: column;
     align-items: center;   
+    list-style-type: none;
 }
 
 .team-list__item:hover {
@@ -302,24 +303,22 @@ header {
     background-color: rgb(252, 227, 138);
  }
 
-.overlay-item {
+ .overlay-link {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(243, 129, 129);
     list-style-type: none;
     height: 56px;
     width: 56px;
     outline: 1px solid rgb(243, 129, 129);
     opacity: 0.5;
-}
+ } 
 
-.overlay-item:hover {
+.overlay-link:hover {
     background-color: rgb(149, 225, 211);
 }
 
-.overlay-link {
-    color: rgb(243, 129, 129);
-}
 
 
 
