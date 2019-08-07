@@ -303,19 +303,22 @@ header {
     background-color: rgb(252, 227, 138);
  }
 
- .overlay-link {
+ .overlay-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(243, 129, 129);
     list-style-type: none;
     height: 56px;
     width: 56px;
     outline: 1px solid rgb(243, 129, 129);
     opacity: 0.5;
- } 
+} 
 
-.overlay-link:hover {
+.overlay-link {
+    color: rgb(243, 129, 129);
+}
+
+.overlay-item:hover {
     background-color: rgb(149, 225, 211);
 }
 
