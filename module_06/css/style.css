@@ -295,6 +295,8 @@ header {
 }
 
 .team-list__item:hover .team-list__img {
+  display: block;
+  position: relative;
   transform: translate(-10px, -10px);
   transition: transform 0.2s linear;
 }
