@@ -261,6 +261,7 @@ header {
 .team-list__item {
   display: flex;
   position: relative;
+  width: 380px;
   top: 0;
   left: 0;
   flex-direction: column;
@@ -269,9 +270,7 @@ header {
 }
 
 .team-list__img {
-  /* display: block; */
-  width: 380px;
-  height: 470px;
+  display: block;
   position: relative;
   margin-bottom: 26px;
 }
@@ -318,12 +317,11 @@ header {
 }
 
 .overlay {
-  display: block;
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 72px;
   left: 0;
-  width: 380px;
-  height: 470px;
 }
 
 .overlay-list {
@@ -383,6 +381,7 @@ header {
 
 .footer-form {
   display: flex;
+  outline: 1px solid rgb(231, 231, 231);
 }
 
 .footer-form input {
@@ -394,7 +393,6 @@ header {
   padding: 8px 54px 8px 10px;
   outline: none;
   border: none;
-  outline: 1px solid rgb(231, 231, 231);
 }
 
 .btn {
