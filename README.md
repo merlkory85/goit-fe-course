@@ -27,4 +27,8 @@ https://merlkory85.github.io/goit-fe-course/module_06/index.html
 Ссылка на репозиторий модуля6
 https://github.com/merlkory85/goit-fe-course/tree/master/module_06
 
+Ссылка на репозиторий модуля 07
+https://github.com/merlkory85/goit-fe-course/tree/master/module07
 
+Ссылка на робочую страницу модуля07
+https://merlkory85.github.io/goit-fe-course/module_07/index.html
