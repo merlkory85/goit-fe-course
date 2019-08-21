@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,900&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css');
 
 * {
@@ -9,7 +10,6 @@
 
 body {
     font-family: 'Roboto', 'Open Sans', sans-serif;
-    overflow-x:hidden;
 }
 
 img {
@@ -40,25 +40,6 @@ h3 {
     font-weight: 900;
     line-height: 32px;
     text-transform: uppercase;
-}
-
-h4 {
-    color: rgb(255, 255, 255);
-    font-family: 'Roboto',  sans-serif;
-    font-size: 18px;
-    font-weight: 900;
-    line-height: 32px;
-    text-transform: uppercase;
-    letter-spacing: -0.36px;
-}
-
-h5 {
-    color: rgb(254, 254, 254);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: -0.32px;
 }
 
 .container {
@@ -124,35 +105,40 @@ h5 {
 
 /* SECTION SLIDER */
 .slider-wrapper {
-    display: block;
+    position: relative;
     height: 600px;
 }
 
-.img-wrapper {
-    position: relative;   
+.slider-wrapper::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: "";
+    background-color: rgba(0, 0, 2, 0.52);
+    z-index: 10;
 }
 
 .slider-img {
-    display: block;  
-    position: relative;
-    height: 600px;
     width: 100vw;
-    filter: brightness(52%);
+    height: 100%;
     object-fit: cover;
 }
 
 .content-wrap {
     position: absolute;
+    top: 0;
+    right: 0;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 600px;
-    width: 1110px;
+    left: 0;
+    z-index: 20;
 }
 
 .slider-btn {
-    position: inherit; 
-    top: 47%;
+    position: absolute; 
+    top: 50%;
     transform: translateY(-50%);
     border: none;
     display: inline-block;
@@ -160,7 +146,6 @@ h5 {
     width: 104px;
     color: rgb(255, 255, 255);
     background-color: rgba(78, 198, 171, 0.65);
-    z-index: 20;
     cursor: pointer;
 }
 
@@ -169,7 +154,7 @@ h5 {
 }
 
 .slider-btn__prev {
-    left: 0;
+   left: 0;
 }
 
 .slider-btn__next {
@@ -177,19 +162,20 @@ h5 {
 }
 
 .slider-title {
-    display: block;
-    width: 100%;
-    position: absolute;
-    top: 40%;
-    left: 65%;
-    transform: translate(-50%, -50%);   
+    font-size: 60px;
+    line-height: 82px;
+}
 
+.box-slider-text {
+    display: inline-block; 
+    width: 70%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .slider-subtitle {
-    position: absolute;
-    top: 48%;
-    left: 15%;
     color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -246,8 +232,6 @@ h5 {
 } 
 
 .list-item__info {
-    display: block;
-    position: absolute;
     bottom: 0;
     width: 100%;
     background-color: rgb(50, 50, 50);
@@ -283,19 +267,19 @@ h5 {
 .overlay {
     display: none;
     position: absolute;
-    top: 2%;
-    right: 3%;
-    width: 94%;
-    height: 83%;
+    top: 10px;
+    right: 10px;
+    bottom: 50px;
+    left: 10px;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.55);
 }
 
 .overlay-wrap {
     position: absolute;
-    width: 175px;
-    top: 50%; 
+    width: 173px;
     left: 51%; 
+    top: 50%; 
     transform: translate(-50%, -50%) 
 
 }
@@ -309,6 +293,10 @@ h5 {
     background-color: rgba(0, 0, 0, 0.55);
     border: none;
     outline: 1px solid rgb(255, 255, 255);
+}
+
+.btn:last-child {
+    margin-right: 0;
 }
 
 .btn:hover {
@@ -353,8 +341,14 @@ footer {
     text-align: center;
 }
 
-.footer-title {
-    display: inline-block; 
+.footer-text {
+    display: inline-block;
+    color: rgb(254, 254, 254);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.32px;
 }
 
 .footer-link {
