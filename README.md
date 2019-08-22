@@ -31,3 +31,4 @@ https://github.com/merlkory85/goit-fe-course/tree/master/module_06
 https://github.com/merlkory85/goit-fe-course/tree/master/module07
 
 Ссылка на робочую страницу модуля07
+https://merlkory85.github.io/goit-fe-course/module07/index.html
