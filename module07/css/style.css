@@ -190,7 +190,7 @@ header {
   padding-top: 100px;
   padding-bottom: 140px;
   background-color: rgb(34, 34, 34);
-  background-image: url("../img/Map_Image.png");
+  background-image: url("./img/Map_Image.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
