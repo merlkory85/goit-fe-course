@@ -174,7 +174,7 @@ header {
 }
 
 .features__list-item:nth-child(3)::before {
-  background-image: url("./img/Icon-Locked.png");
+  background-image: url("../img/Icon-Locked.png");
 }
 
 .list-item__text {
