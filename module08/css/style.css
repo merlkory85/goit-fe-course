@@ -173,7 +173,7 @@ h3 {
 }
 
 .team__item:nth-child(2):after {
-  background-image: url("../img/_flask.png");
+  background-image: url("../img/flask.png");
   background-color: rgb(255, 165, 7);
 }
 .team__item:nth-child(3):after {
