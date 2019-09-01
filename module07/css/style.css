@@ -187,21 +187,12 @@ header {
 
 /* SECTION CONTACT */
 .section-contact {
-  position: relative;
   padding-top: 100px;
   padding-bottom: 140px;
   background-color: rgb(34, 34, 34);
-}
-
-.overlay {
-  position: absolute;
-  top: 130px;
-  right: -10px;
-}
-
-.overlay img {
-  width: 684px;
-  object-fit: cover;
+  background-image: url('../img/Map_Image.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .contact-title__main {
@@ -238,6 +229,7 @@ input[type="submit"] {
 textarea {
   width: 455px;
   height: 210px;
+  resize: none;
 }
 
 .firstname:valid,
