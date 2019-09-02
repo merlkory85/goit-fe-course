@@ -176,17 +176,17 @@ h3 {
   background-color: rgb(255, 78, 80);
 }
 
-.icon-flask:after {
+.icon-flask::after {
   background-image: url("../img/flask.png");
   background-color: rgb(255, 165, 7);
 }
 
-.icon-coffee:after {
+.icon-coffee::after {
   background-image: url("../img/coffee.png");
   background-color: rgb(28, 215, 173);
 }
 
-.icon-telegram:after {
+.icon-telegram::after {
   background-image: url("../img/telegram.png");
   background-color: rgb(78, 115, 219);
   
