@@ -34,19 +34,6 @@
     margin: 0 auto;
   }
 
-  .wrap__holiday-dreams {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 700px;
-    height: 100%;
-    text-align: center;
-    padding: 36px 0;
-    background: no-repeat url("../img/bg_tablet.png") center top;
-    object-fit: cover;
-    background-color: rgb(26, 25, 21);
-  }
-
   .head-container {
     display: flex;
     justify-content: space-between;
@@ -92,20 +79,7 @@
     margin: 0 auto;
   }
 
-  .wrap__holiday-dreams {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 700px;
-    height: 100%;
-    text-align: center;
-    padding: 36px 0;
-    background: no-repeat url("../img/bg_desktop.png") center top;
-    object-fit: cover;
-    background-color: rgb(26, 25, 21);
-  }
-
-   .head-container {
+  .head-container {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -118,8 +92,8 @@
   .dreams-container {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-  } 
+    align-items: center;
+  }
 
   .dreams__title {
     width: 510px;
@@ -142,5 +116,3 @@
     flex-wrap: wrap;
   }
 }
-
-
