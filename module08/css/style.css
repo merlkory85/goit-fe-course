@@ -177,7 +177,11 @@ h3 {
   
 }
 
+<<<<<<< HEAD
 .icon-flask:after {
+=======
+.team__item:nth-child(2):after {
+>>>>>>> 2557c7794558511aaea036206f6ab5667f4ada6e
   background-image: url("../img/flask.png");
   background-color: rgb(255, 165, 7);
 }
