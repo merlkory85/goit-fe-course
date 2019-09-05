@@ -64,7 +64,8 @@ h3 {
   margin: 0 auto;
 }
 
- .wrap__holiday-dreams {
+.wrap__holiday-dreams {
+  padding: 24px 0;
   min-height: 540px;
   height: 100%;
   text-align: center;
@@ -94,11 +95,11 @@ h3 {
 
 .registration-btn:hover {
   border: 2px solid rgb(255, 255, 255, 1);
-} 
+}
 
 .registration-btn:active {
   background-color: rgb(98, 228, 200);
-} 
+}
 
 .logo {
   margin-bottom: 30px;
@@ -119,10 +120,12 @@ h3 {
 
 .dreams__link {
   padding: 13px 52px;
+  background-color: rgb(255, 78, 80);
 }
 
 .dreams__link:hover {
-  background-color: rgb(255, 78, 80);
+  color: rgb(255, 78, 80);
+  background-color: rgb(255, 255, 255);
 }
 
 .partners {
@@ -157,7 +160,7 @@ h3 {
 }
 
 .team__item-wrap::after {
-  content: '';
+  content: "";
   display: block;
   width: 33px;
   height: 33px;
@@ -174,26 +177,20 @@ h3 {
 .icon-tv::after {
   background-image: url("../img/tv.png");
   background-color: rgb(255, 78, 80);
-  
 }
 
-<<<<<<< HEAD
-.icon-flask:after {
-=======
-.team__item:nth-child(2):after {
->>>>>>> 2557c7794558511aaea036206f6ab5667f4ada6e
+.icon-flask::after {
   background-image: url("../img/flask.png");
   background-color: rgb(255, 165, 7);
 }
-.icon-coffee:after {
+.icon-coffee::after {
   background-image: url("../img/coffee.png");
   background-color: rgb(28, 215, 173);
 }
 
-.icon-telegram:after {
+.icon-telegram::after {
   background-image: url("../img/telegram.png");
   background-color: rgb(78, 115, 219);
-  
 }
 
 .team__item-wrap {
@@ -218,4 +215,4 @@ h3 {
 .team__link:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(255, 78, 80);
-} */
+}
