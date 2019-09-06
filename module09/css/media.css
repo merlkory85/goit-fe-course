@@ -13,7 +13,7 @@
 @media (min-width: 425px) and (max-width: 767px) {
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 990px) {
   .container {
     width: 670px;
     margin: 0 auto;
@@ -25,7 +25,30 @@
   }
 
   .dreams__text {
-    width: 410px;
+    width: 460px;
+    font-size: 24px;
+  }
+
+  .title {
+    width: 420px;
+    font-size: 22px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1023px) {
+  .container {
+    width: 920px;
+    margin: 0 auto;
+  }
+
+  .registration-list {
+    /* display: flex; */
+    margin-top: 25px;
+  }
+
+  .dreams__text {
+    width: 490px;
     font-size: 24px;
   }
 
@@ -52,7 +75,7 @@
   }
 
   .dreams__text {
-    width: 410px;
+    width: 440px;
     font-size: 24px;
   }
 
