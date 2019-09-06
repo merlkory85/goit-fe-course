@@ -39,3 +39,9 @@ https://github.com/merlkory85/goit-fe-course/tree/master/module08
 
 Ссылка на робочую страницу модуля08
 https://merlkory85.github.io/goit-fe-course/module08/index.html
+
+Ссылка на репозиторий модуля 09
+https://github.com/merlkory85/goit-fe-course/tree/master/module09
+
+Ссылка на робочую страницу модуля09
+https://merlkory85.github.io/goit-fe-course/module09/index.html
