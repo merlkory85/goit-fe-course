@@ -3,28 +3,28 @@
 https://merlkory85.github.io/goit-fe-course/module01-02/homework/index.html
 
 
-Ссылка на робочую страницу модуля3
+Ссылка на робочую страницу модуля 03
 https://merlkory85.github.io/goit-fe-course/module03/homework/index.html
 
-Ссылка на репозиторий модуля3
+Ссылка на репозиторий модуля 03
 https://github.com/merlkory85/goit-fe-course/tree/master/module03/homework
 
-Ссылка на робочую страницу модуля4
+Ссылка на робочую страницу модуля 04
 https://merlkory85.github.io/goit-fe-course/module04/index.html
 
-Ссылка на репозиторий модуля4
+Ссылка на репозиторий модуля 04
 https://github.com/merlkory85/goit-fe-course/tree/master/module04
 
-Ссылка на робочую страницу модуля5
+Ссылка на робочую страницу модуля 05
 https://merlkory85.github.io/goit-fe-course/module05/index.html
 
-Ссылка на репозиторий модуля5
+Ссылка на репозиторий модуля 05
 https://github.com/merlkory85/goit-fe-course/tree/master/module05
 
-Ссылка на робочую страницу модуля6
+Ссылка на робочую страницу модуля 06
 https://merlkory85.github.io/goit-fe-course/module_06/index.html
 
-Ссылка на репозиторий модуля6
+Ссылка на репозиторий модуля 06
 https://github.com/merlkory85/goit-fe-course/tree/master/module_06
 
 Ссылка на репозиторий модуля 07
