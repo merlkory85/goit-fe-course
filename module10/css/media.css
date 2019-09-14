@@ -1,0 +1,25 @@
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .icon-alarm::before {
+    background-image: url("../img/alarm@2x-min.png");
+  }
+
+  .icon-line-graph::before {
+    background-image: url("../img/line-graph@2x-min.png");
+  }
+
+  .icon-computer::before {
+    background-image: url("../img/computer@2x-min.png");
+  }
+
+  .icon-book::before {
+    background-image: url("../img/book@2x-min.png");
+  }
+
+  .icon-home::before {
+    background-image: url("../img/home@2x-min.png");
+  }
+
+  .icon-image::before {
+    background-image:  url("../img/image@2x-min.png");
+  }
+}
