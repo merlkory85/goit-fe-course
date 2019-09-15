@@ -1,4 +1,11 @@
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .page-wrap {
+    background: no-repeat url("../img/eagle@2x-min.png") top center;
+  }
+
   .icon-alarm::before {
     background-image: url("../img/alarm@2x-min.png");
   }
@@ -20,6 +27,6 @@
   }
 
   .icon-image::before {
-    background-image:  url("../img/image@2x-min.png");
+    background-image: url("../img/image@2x-min.png");
   }
 }
