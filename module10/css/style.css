@@ -6,7 +6,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -58,8 +58,8 @@ h3 {
   -o-transition: width 0.2s linear;
   transition: width 0.2s linear;
   -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 .heading:hover:after,
 .heading:focus:after {
@@ -125,38 +125,38 @@ img {
 
 .justify-content-center {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .justify-content-between {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .align-items-center {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .align-items-end {
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .flex-column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .flex-wrap {
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -164,40 +164,40 @@ img {
   margin: 0 auto;
 }
 /* HEADER */
-.page-wrap {
+.page-banner {
   display: block;
   position: relative;
-  width: 100%;
-  min-height: 1000px;
-  height: auto;
-  background-image: url("../img/eagle-min.png");
-  background-repeat: no-repeat;
-  background-position: top center;
+  background: no-repeat url("../img/eagle-min.png") center;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
+  min-height: 1000px;
+  height: 100%;
 }
 
-.page-wrap__overlay {
+.page-banner::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
   width: 100%;
+  min-height: 1000px;
   height: 100%;
+  background: -o-linear-gradient(
+    bottom,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
   background: -webkit-gradient(
     linear,
     left bottom, left top,
     from(rgba(252, 227, 138, 0.9)),
     to(rgba(243, 129, 129, 0.9))
   );
-  background: -o-linear-gradient(
-    bottom,
-    rgba(252, 227, 138, 0.9) 0%,
-    rgba(243, 129, 129, 0.9) 100%
-  );
   background: linear-gradient(
     to top,
     rgba(252, 227, 138, 0.9) 0%,
     rgba(243, 129, 129, 0.9) 100%
   );
-  display: block;
-  position: absolute;
 }
 
 .page-header {
@@ -227,6 +227,8 @@ img {
 }
 
 .site-navigation__link {
+  display: block;
+  height: 18px;
   color: rgb(255, 255, 255);
 }
 
@@ -250,6 +252,18 @@ img {
 .site-navigation__link:hover:after,
 .site-navigation__link:focus:after {
   width: 100%;
+}
+
+.site-navigation__link svg {
+  display: block; 
+  width: 18px;
+  height: 18px;
+  fill: rgb(255, 255, 255);
+}
+
+.site-navigation__link svg:hover,
+.site-navigation__link svg:focus {
+  fill: rgb(252, 227, 138);
 }
 
 .page-title {
@@ -289,46 +303,23 @@ img {
   position: relative;
   margin-bottom: 94px;
   -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  flex-basis: 30%;
 }
 
 .features__item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.features__item::before {
+.features__icon {
   display: block;
-  position: relative;
-  content: "";
-  top: 30px;
+}
+
+.features__icon-tools {
+  display: block;
+  position: absolute;
+  width: 32px;
   height: 32px;
-  color: rgb(149, 225, 211);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.icon-alarm::before {
-  background-image: url("../img/alarm-min.png");
-}
-
-.icon-line_graph::before {
-  background-image: url("../img/line-graph-min.png");
-}
-
-.icon-computer::before {
-  background-image: url("../img/computer-min.png");
-}
-
-.icon-book::before {
-  background-image: url("../img/book-min.png");
-}
-
-.icon-home::before {
-  background-image: url("../img/home-min.png");
-}
-
-.icon-image::before {
-  background-image: url("../img/image-min.png");
+  fill: rgb(149, 225, 211);
 }
 
 .features__item-wrap {
@@ -368,6 +359,7 @@ img {
 
 .team__item {
   display: block;
+  /* position: relative; */
 }
 
 .team__item:hover .team__overlay {
@@ -375,31 +367,35 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
   z-index: 10;
   -webkit-transform: translate(-10px, -10px);
-      -ms-transform: translate(-10px, -10px);
-          transform: translate(-10px, -10px);
-  -webkit-transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
+  -webkit-transition: -webkit-transform 0.2s linear,
+    -webkit-box-shadow 0.2s linear;
   transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
   -o-transition: transform 0.2s linear, box-shadow 0.2s linear;
+  -webkit-transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
   transition: transform 0.2s linear, box-shadow 0.2s linear;
   transition: transform 0.2s linear, box-shadow 0.2s linear, -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+  transition: transform 0.2s linear, box-shadow 0.2s linear,
+    -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+  background-image: -o-linear-gradient(
+    bottom,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
   background-image: -webkit-gradient(
     linear,
     left bottom, left top,
     from(rgba(252, 227, 138, 0.9)),
     to(rgba(243, 129, 129, 0.9))
-  );
-  background-image: -o-linear-gradient(
-    bottom,
-    rgba(252, 227, 138, 0.9) 0%,
-    rgba(243, 129, 129, 0.9) 100%
   );
   background-image: linear-gradient(
     to top,
@@ -407,16 +403,16 @@ img {
     rgba(243, 129, 129, 0.9) 100%
   );
   -webkit-box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
-          box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
+  box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
   cursor: pointer;
 }
 
-.team__item:hover .team-item__card {
+.team__item:hover .team__item-img {
   display: block;
   position: relative;
   -webkit-transform: translate(-10px, -10px);
-      -ms-transform: translate(-10px, -10px);
-          transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
   -webkit-transition: -webkit-transform 0.2s linear;
   transition: -webkit-transform 0.2s linear;
   -o-transition: transform 0.2s linear;
@@ -454,11 +450,12 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
   list-style-type: none;
   outline: 1px solid rgb(243, 129, 129);
   z-index: 100;
