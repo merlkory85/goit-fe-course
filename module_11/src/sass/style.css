@@ -2,18 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300i,400&display=swap");
 
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Montserrat", "Roboto", sans-serif;
-  font-family: "Kaushan Script", cursive;
-}
-
 h1 {
   font-size: 30px;
   color: rgb(255, 255, 255);
@@ -29,7 +17,7 @@ h3 {
 }
 
 .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: $main-font-stack;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -72,7 +60,7 @@ h3 {
 
 .subject {
   display: block;
-  font-family: "Kaushan Script", cursive;
+  font-family: $cursive-font-stack;
   font-weight: 400;
   text-transform: none;
 }
@@ -85,36 +73,18 @@ h3 {
   margin-bottom: 18px;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .text {
   color: rgb(153, 153, 153);
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  font-family: "Roboto", sans-serif;
+  font-family: $secondary-font-stack;
 }
 
 .understyle {
-  font-family: "Roboto", sans-serif;
+  font-family: $secondary-font-stack;
   font-weight: 300;
   font-style: italic;
-}
-
-.link {
-  display: block;
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-}
-
-.list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .d-flex {
@@ -159,10 +129,7 @@ img {
   flex-wrap: wrap;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
+
 /* HEADER */
 .page-banner {
   display: block;
@@ -490,7 +457,7 @@ img {
 
 .footer-nav__text {
   color: rgb(51, 51, 51);
-  font-family: "Montserrat", sans-serif;
+  font-family: $main-font-stack;
   font-weight: 700;
   font-size: 14px;
   margin-right: 3px;
@@ -511,7 +478,7 @@ img {
 
 .footer-form input {
   color: rgb(51, 51, 51);
-  font-family: "Roboto", sans-serif;
+  font-family: $secondary-font-stack;
   font-size: 15px;
   font-style: italic;
   line-height: 24px;
@@ -523,7 +490,7 @@ img {
 .footer-form__btn {
   color: rgb(255, 255, 255);
   background-color: rgb(149, 225, 211);
-  font-family: "Montserrat", sans-serif;
+  font-family: $main-font-stack;
   font-size: 14px;
   font-weight: 700;
   border: none;
@@ -531,8 +498,4 @@ img {
   padding: 8px 30px;
   text-transform: uppercase;
   cursor: pointer;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f03fa3b3abb14aee88108a8f5d889eb448759e11
