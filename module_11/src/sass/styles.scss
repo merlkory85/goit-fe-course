@@ -1,4 +1,27 @@
 /*
    Import partials below
 */
-@import './normalize';
+/* Helpers */
+@import 'helpers/variables';
+@import 'helpers/placeholders';
+@import 'helpers/mixins';
+
+@import 'normalize';
+@import 'base';
+@import 'fonts';
+
+/* Components */ 
+@import 'components/container';
+@import 'components/page-banner';
+@import 'components/page-header';
+@import 'components/site-logo';
+@import 'components/site-navigation';
+@import 'components/page-title';
+@import 'components/page-button';
+@import 'components/features';
+@import 'components/features-title';
+@import 'components/team-title';
+@import 'components/team-paragraph';
+@import 'components/team';
+@import 'components/footer';
+
