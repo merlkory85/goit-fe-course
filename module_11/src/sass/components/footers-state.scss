@@ -1,9 +1,3 @@
-.footer-nav {
-  @extend %space-between;
-  padding: 22px 0;
-  border-top: 1px solid $footer-line;
-}
-
 .footer-nav__wrap {
   @extend %item-center;
 

@@ -2,7 +2,7 @@
    Import partials below
 */
 
-/* Helpers */
+/* Abstracts */
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 
@@ -76,11 +76,11 @@
   font-style: italic;
 }
 
+.footer-nav,
 .page-nav,
 .site-navigation,
 .features-list,
-.team-list,
-.footer-nav {
+.team-list {
   display: flex;
   justify-content: space-between;
 }
@@ -101,6 +101,8 @@
   display: flex;
   flex-direction: column;
 }
+
+/* Base */
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
@@ -493,6 +495,22 @@ img {
   height: auto;
 }
 
+/* Layout */
+
+.page-header {
+  padding: 24px 0;
+  margin-bottom: 164px;
+}
+
+.features-wrap {
+  padding: 46px 0;
+}
+
+.footer-nav {
+  padding: 22px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
 /* Components */
 
 .container {
@@ -504,10 +522,6 @@ img {
 .page-info {
   position: relative;
   z-index: 100;
-}
-
-.features-wrap {
-  padding: 46px 0;
 }
 
 .page-banner {
@@ -529,11 +543,6 @@ img {
   min-height: 1000px;
   height: 100%;
   background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
-}
-
-.page-header {
-  padding: 24px 0;
-  margin-bottom: 164px;
 }
 
 .site-logo__link {
@@ -826,11 +835,6 @@ img {
   width: 50%;
   height: 50%;
   fill: #f38181;
-}
-
-.footer-nav {
-  padding: 22px 0;
-  border-top: 1px solid #e5e5e5;
 }
 
 .footer-nav__wrap-info {

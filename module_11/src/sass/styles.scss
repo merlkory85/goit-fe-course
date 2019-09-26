@@ -1,19 +1,23 @@
 /*
    Import partials below
 */
-/* Helpers */
-@import 'helpers/variables';
-@import 'helpers/placeholders';
-@import 'helpers/mixins';
+/* Abstracts */
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
 
-@import 'normalize';
-@import 'base';
-@import 'fonts';
+/* Base */
+@import 'base/normalize';
+@import 'base/main.scss';
+@import 'base/fonts';
+
+/* Layout */
+@import 'layout/header';
+@import 'layout/section-features';
+@import 'layout/footer';
 
 /* Components */ 
 @import 'components/container';
 @import 'components/page-banner';
-@import 'components/page-header';
 @import 'components/site-logo';
 @import 'components/site-navigation';
 @import 'components/page-title';
@@ -23,5 +27,5 @@
 @import 'components/team-title';
 @import 'components/team-paragraph';
 @import 'components/team';
-@import 'components/footer';
+@import 'components/footers-state';
 
