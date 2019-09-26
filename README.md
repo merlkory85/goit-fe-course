@@ -52,6 +52,13 @@ https://github.com/merlkory85/goit-fe-course/tree/master/module_10
 Ссылка на робочую страницу модуля10
 https://merlkory85.github.io/goit-fe-course/module_10/index.html
 
+Ссылка на репозиторий модуля 11
+https://github.com/merlkory85/goit-fe-course/tree/master/module_11
+
+Ссылка на робочую страницу модуля11
+https://merlkory85.github.io/goit-fe-course/module_11/build/index.html
+
+
 
 
 
