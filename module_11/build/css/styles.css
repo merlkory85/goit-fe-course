@@ -527,7 +527,7 @@ img {
 .page-banner {
   display: block;
   position: relative;
-  background: no-repeat url("/module_11/build/images/eagle.png") center center;
+  background: no-repeat url("../build/images/eagle.png") center;
   -o-object-fit: cover;
   object-fit: cover;
   min-height: 1000px;
