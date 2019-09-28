@@ -1,7 +1,7 @@
 .page-banner {
   display: block;
   position: relative;
-  background: no-repeat url('/build/images/eagle.png') center center;
+  background: no-repeat url('../build/images/eagle.png') center center;
   object-fit: cover;
   min-height: 1000px;
   height: 100%;
@@ -24,7 +24,7 @@
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .page-banner {
-    background: no-repeat url('/build/images/eagle@2x.png') center;
+    background: no-repeat url('../build/images/eagle@2x.png') center;
     background-size: 1920px 1000px;
   }
 }
