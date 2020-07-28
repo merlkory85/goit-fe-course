@@ -193,57 +193,7 @@ header {
 
 /* MAIN */
 
-/* SECTION SERVICES */
-.container-service {
-  padding-top: 80px;
-  padding-bottom: 140px;
-}
 
-.features__list {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  text-align: center;
-}
-
-.features__list-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 274px;
-}
-
-.features__list-item::before {
-  content: "";
-  display: block;
-  width: 68px;
-  height: 68px;
-  border: 3px solid #fed136;
-  border-radius: 100px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-}
-
-.features__list-item:nth-child(1)::before {
-  background-image: url("../img/Icon-Basket.png");
-}
-
-.features__list-item:nth-child(2)::before {
-  background-image: url("../img/Icon-Laptop.png");
-}
-
-.features__list-item:nth-child(3)::before {
-  background-image: url("../img/Icon-Locked.png");
-}
-
-.list-item__text {
-  font-family: "Roboto Slab", serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: -0.35px;
-}
 
 /* SECTION CONTACT */
 .section-contact {
